@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abilatezie Vin‑Wilson Anu — Portfolio</title>
+  <meta name="description" content="Portfolio of Abilatezie Vin‑Wilson Anu — Software Engineering student specializing in full‑stack, cloud, AI/ML, and databases." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Abilatezie Anu</span>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon" title="Theme toggle (disabled)" aria-label="Theme toggle (disabled)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.64 13a1 1 0 0 0-1.05-.14A8 8 0 1 1 11.1 3.41a1 1 0 0 0-.14-1.05 1 1 0 0 0-1.09-.32A10 10 0 1 0 22 14.09a1 1 0 0 0-.36-1.09z"/></svg>
+        </button>
+        <button class="icon menu" onclick="document.getElementById('drawer').toggleAttribute('open')" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <dialog id="drawer" style="border:none; border-radius:16px; padding:0; background:var(--panel); color:var(--text); box-shadow: var(--shadow); width:min(90vw,420px)">
+    <div style="padding:14px 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,.08)">
+      <strong>Menu</strong>
+      <button class="icon" onclick="this.closest('dialog').close()" aria-label="Close menu">✕</button>
+    </div>
+    <nav style="display:flex; flex-direction:column; padding:8px 16px 16px; gap:6px">
+      <a href="#projects" onclick="drawer.close()">Projects</a>
+      <a href="#skills" onclick="drawer.close()">Skills</a>
+      <a href="#experience" onclick="drawer.close()">Experience</a>
+      <a href="#education" onclick="drawer.close()">Education</a>
+      <a href="#contact" onclick="drawer.close()">Contact</a>
+    </nav>
+  </dialog>
+
+  <main id="home" class="container">
+    <!-- HERO -->
+    <section class="hero" aria-label="Intro">
+      <div>
+        <span class="pill"> Software Engineering • Full‑stack • AI/ML</span>
+        <h1>Abilatezie Vin‑Wilson Anu</h1>
+        <p class="lead">I build practical, human‑centered software from <strong>Flutter</strong> mobile apps and <strong>FastAPI</strong> backends to <strong>AI/ML</strong> features and <strong>cloud‑ready</strong> deployments.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l10 6-10 6L2 9l10-6zm0 9l10 6-10 6-10-6 10-6z"/></svg>
+            View Projects
+          </a>
+          <a class="btn secondary" href="#contact">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 8V7l-3 2-3-2-3 2-3-2-3 2v1l3-2 3 2 3-2 3 2 3-2zM4 8v9h16V8l-8 5-8-5z"/></svg>
+            Contact Me
+          </a>
+          <a class="btn secondary" href="WILSON Resume.pdf" download>Download Résumé</a>
+        </div>
+      </div>
+      <div class="avatar" role="img" aria-label="Profile image placeholder"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-label="Projects">
+      <h2 style="margin:0 0 10px">Projects</h2>
+      <p class="muted" style="margin:0 0 16px">A few things I’m proud of. Repos and links can be added later.</p>
+
+      <div class="grid cards">
+        <article class="card project span-6">
+          <div class="top">
+            <h3>CarDocAI</h3>
+            <span class="stack muted">Flutter • Firebase • TFLite • Audio/Image</span>
+          </div>
+          <p>Mobile app that detects vehicle faults from images and sounds using on‑device ML. Built with offline‑first sync and a Firebase backend.</p>
+          <div class="chips">
+            <span class="chip">AI/ML</span><span class="chip">Mobile</span><span class="chip">Edge</span>
+          </div>
+        </article>
+
+        <article class="card project span-6">
+          <div class="top">
+            <h3>Civil Status Registration</h3>
+            <span class="stack muted">PHP • MySQL • Docker</span>
+          </div>
+          <p>Prototype digitization of birth, marriage, and death records for Cameroon, with user roles, audit logs, and containerized deployment.</p>
+          <div class="chips"><span class="chip">E‑Gov</span><span class="chip">Security</span><span class="chip">Docker</span></div>
+        </article>
+
+        <article class="card project span-6">
+          <div class="top">
+            <h3>NAIDLS</h3>
+            <span class="stack muted">FastAPI • PostgreSQL • React</span>
+          </div>
+          <p><strong>National Agricultural Input and Distribution Linkage System</strong> - A comprehensive digital platform designed to streamline and modernize agricultural input distribution across Cameroon. The system provides transparent tracking of seed, fertilizer, and equipment flows from suppliers to farmers, with real-time analytics and reporting capabilities.</p>
+          <div class="chips"><span class="chip">AgTech</span><span class="chip">Analytics</span><span class="chip">API</span></div>
+        </article>
+
+        <article class="card project span-6">
+          <div class="top">
+            <h3>MongoDB Replica Set Lab</h3>
+            <span class="stack muted">MongoDB • Docker • Bash</span>
+          </div>
+          <p>Hands‑on cluster that demonstrates failover, consistency, and CRUD with primary/secondary nodes for learning distributed systems.</p>
+          <div class="chips"><span class="chip">DevOps</span><span class="chip">HA</span><span class="chip">Distributed</span></div>
+        </article>
+
+        <article class="card project span-6">
+          <div class="top">
+            <h3>Control Systems Experiments</h3>
+            <span class="stack muted">MATLAB/Simulink</span>
+          </div>
+          <p>RLC modeling, root locus, Nyquist, and PID tuning labs with neat plots and write‑ups demonstrating control theory fundamentals.</p>
+          <div class="chips"><span class="chip">Signals</span><span class="chip">PID</span><span class="chip">Simulation</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-label="Skills">
+      <h2 style="margin:0 0 10px">Skills</h2>
+      <div class="grid cards">
+        <div class="card span-6">
+          <h3>Languages & Frameworks</h3>
+          <p class="muted">Python, JavaScript (React, Node), Dart (Flutter), PHP, Java</p>
+          <div class="chips">
+            <span class="chip">Flutter</span><span class="chip">React</span><span class="chip">FastAPI</span><span class="chip">Node</span>
+          </div>
+        </div>
+        <div class="card span-6">
+          <h3>Databases</h3>
+          <p class="muted">MySQL, PostgreSQL, MongoDB, Firebase, Supabase</p>
+          <div class="chips"><span class="chip">SQL</span><span class="chip">NoSQL</span><span class="chip">ORM</span></div>
+        </div>
+        <div class="card span-6">
+          <h3>Cloud & DevOps</h3>
+          <p class="muted">AWS, Docker, GitHub Actions, CI/CD, Kubernetes (basics)</p>
+          <div class="chips"><span class="chip">Containers</span><span class="chip">CI/CD</span><span class="chip">IaC</span></div>
+        </div>
+        <div class="card span-6">
+          <h3>AI/ML & Data</h3>
+          <p class="muted">TensorFlow, PyTorch, scikit‑learn, OpenCV, MATLAB/Simulink</p>
+          <div class="chips"><span class="chip">CV</span><span class="chip">TFLite</span><span class="chip">Data viz</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-label="Experience">
+      <h2 style="margin:0 0 10px">Experience</h2>
+      <ol class="timeline">
+        <li class="tl-item">
+          <h3 style="margin:0">Student Developer — University Projects</h3>
+          <p class="muted" style="margin:.2rem 0 .6rem">2023 — Present</p>
+          <ul>
+            <li>Built <strong>CarDocAI</strong> with AI‑based audio/image recognition and Firebase.</li>
+            <li>Prototyped a <strong>Civil Status Registration System</strong> for Cameroon.</li>
+            <li>Designed data models & API concepts for <strong>NAIDLS</strong>.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-label="Education">
+      <h2 style="margin:0 0 10px">Education</h2>
+      <div class="card span-8">
+        <h3 style="margin:.2rem 0">B.Eng. Software Engineering (ongoing)</h3>
+        <p class="muted" style="margin:.2rem 0">University of Buea — Expected 2026</p>
+        <p>Relevant coursework: Cloud Computing & SOA, Database Systems, Control Systems, Software Architecture, AI & ML.</p>
+      </div>
+    </section>
+
+    <!-- CERTS -->
+    <section id="certs" aria-label="Certifications & Achievements">
+      <h2 style="margin:0 0 10px">Certifications & Achievements</h2>
+      <div class="grid cards">
+        <div class="card span-4"><strong>Cloud Computing Fundamentals</strong><br><span class="muted">Coursera/edX</span></div>
+        <div class="card span-4"><strong>Firebase & Flutter</strong><br><span class="muted">Self‑directed</span></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contact">
+      <h2 style="margin:0 0 10px">Contact</h2>
+      <div class="grid cards">
+        <div class="card span-8">
+          <p><strong>Email:</strong> <a href="mailto:abilavinwilson@gmail.com">abilavinwilson@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+237671995669">+237 671 995 669</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/VIN-WILSON207" target="_blank" rel="noopener">github.com/VIN-WILSON207</a></p>
+          <form action="mailto:abilavinwilson@gmail.com" method="post" enctype="text/plain" style="margin-top:8px">
+            <label for="msg" class="muted">Quick message</label>
+            <textarea id="msg" name="message" rows="4" style="width:100%; margin-top:6px; padding:10px; border-radius:12px; border:1px solid rgba(255,255,255,.14); background:transparent; color:var(--text)" placeholder="Say hi…"></textarea>
+            <div class="cta" style="margin-top:10px">
+              <button class="btn" type="submit">Send</button>
+              <a class="btn secondary" href="#home">Back to top</a>
+            </div>
+          </form>
+        </div>
+        <div class="card span-4">
+          <h3>Location</h3>
+          <p class="muted">Buea, Cameroon</p>
+          <p class="muted">Open to remote & hybrid roles.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap">
+      <span>© 2025 Abilatezie Vin‑Wilson Anu</span>
+      <span class="muted">Built with HTML & CSS </span>
+    </div>
+  </footer>
+</body>
+</html> 
